@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/list.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <i class="fas fa-user-check"></i>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preload" href="./assets/images/icon-check.svg" as="image" type="image/svg+xml" crossorigin="anonymous"> -->
+
+
+    <header class="card">
+      <h1>lista de tareas</h1>
+    </header>
+
+
+    <main>
+      <div class="card add">
+        <div class="cb-container">
+          <button id="add-btn">+</button>
+        </div>
+        <div class="txt-container">
+          <label for="addt">Crear lista</label>
+          <input type="text" class="txt-input" placeholder="Crear nueva lista...📝✍🏾" spellcheck="false"
+            autocomplete="off" id="addt" />
+        </div>
+      </div>
+      <ul class="todos"></ul>
+      <div class="card stat">
+        <p class="corner"><span id="items-left">0</span> elementos</p>
+        <div class="filter">
+          <button id="all" class="on">todo</button>
+          <button id="active">Activos</button>
+          <button id="completed">Completados</button>
+        </div>
+        <div class="corner">
+          <button id="clear-completed">eliminar Completados</button>
+        </div>
+      </div>
+    </main>
+    <p class="notes">nota: Arrastra y suelta para reordenar la lista</p>
+    <footer>
+      <h5>creado por adan</h5>
+    </footer>
+
+    <!-- script -->
+    <script src="./js/list.js"></script>
+    
+</body>
+</html>
